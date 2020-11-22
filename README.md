@@ -1,11 +1,14 @@
-# What The Coffe
+# What The Coffe 🥄
 A simple API that returns different coffee informations
 
 ## TODO
 *   [x] Scrape Wikipedia
-*   [ ] Sort information
-*   [ ] Getter functions
-    *   [ ] Get Coffee Regions
-    *   [ ] Get Coffee Names
-    *   [ ] Get Coffee Varietes
-*   [ ] Deploy to Heroku
+*   [x] Sort information
+*   [x] Getter functions
+    *   [x] Get Coffee Regions
+    *   [x] Get Coffee Names
+    *   [x] Get Coffee Varietes
+*   [ ] APIfy
+    *   [ ] express APP
+    *   [ ] Cors fixing
+    *   [ ] Deploy heroku
