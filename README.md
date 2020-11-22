@@ -2,7 +2,7 @@
 A simple API that returns different coffee informations
 
 ## TODO
-*   [ ] Scrap Wikipedia
+*   [x] Scrape Wikipedia
 *   [ ] Sort information
 *   [ ] Getter functions
     *   [ ] Get Coffee Regions
