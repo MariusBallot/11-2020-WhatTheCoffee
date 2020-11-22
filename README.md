@@ -1,4 +1,4 @@
-# What The Coffe 🥄
+# What The Coffee 🥄
 A simple API that returns different coffee informations
 
 ## TODO
