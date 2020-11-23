@@ -3,7 +3,7 @@ cheerio = require("cheerio")
 
 const url = "https://en.wikipedia.org/wiki/List_of_coffee_varieties"
 
-async function getCoffee() {
+async function getCoffeeVarietes() {
     const { data } = await axios.get(url)
     const $ = cheerio.load(data)
     const coffeeTable = $('td:contains("Arusha")').parent().parent()
@@ -33,4 +33,4 @@ async function getCoffee() {
     return coffeeInfos
 }
 
-module.exports = getCoffee;
+module.exports = getCoffeeVarietes;

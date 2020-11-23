@@ -8,8 +8,9 @@ A simple API that returns different coffee informations
     *   [x] Get Coffee Regions
     *   [x] Get Coffee Names
     *   [x] Get Coffee Varietes
+    *   [ ] Get Coffee Drinks
 *   [ ] APIfy
     *   [x] express APP
     *   [x] nodemon
     *   [x] Cors fixing
-    *   [ ] Deploy heroku
+    *   [x] Deploy heroku
