@@ -13,6 +13,7 @@ async function getCoffeeDrinks() {
 
     let coffeeInfos = []
     let catIndex = -1
+    let dlParts = 0
     $('.mw-headline').each((i, el) => {
         if (i >= $('.mw-headline').length - 4)
             return
@@ -24,6 +25,28 @@ async function getCoffeeDrinks() {
             coffeeInfos.push(cat)
             catIndex++
 
+
+            if ($(el).parent().nextUntil('dl').length < $(el).parent().nextUntil('h3').length
+                && $(el).parent().nextUntil('dl').length < $(el).parent().nextUntil('h2').length) {
+
+                dlParts++
+                let dlChecker = 1
+                console.log($(el).text(), 'this part is dled')
+                $('dl').each((i, myDl) => {
+                    if (dlParts == dlChecker) {
+                        coffeeInfos[catIndex].drinks.push({
+                            name: $(myDl).text()
+                        })
+                    }
+                    if ($(myDl).nextUntil("h2").length < $(myDl).nextUntil("dl").length) {
+
+                        console.log('_______________next part')
+                        dlChecker++
+                    }
+                })
+            }
+
+
         }
         if ($(el).parent().prop("nodeName") == "H3") {
             const drink = {
@@ -34,9 +57,7 @@ async function getCoffeeDrinks() {
     });
 
 
-    $('dl').each((i, el) => {
 
-    })
 
     return coffeeInfos
 }
