@@ -11,12 +11,12 @@ Hosted on http://what-the-coffee.herokuapp.com
 
 ## Details
 This api was made by dynamicly scraping those wikipedia page
-    https://en.wikipedia.org/wiki/List_of_coffee_varieties
-    https://en.wikipedia.org/wiki/List_of_coffee_drinks
+* https://en.wikipedia.org/wiki/List_of_coffee_varieties
+* https://en.wikipedia.org/wiki/List_of_coffee_drinks
 
 The tools used were
-    https://www.npmjs.com/package/cheerio
-    https://www.npmjs.com/package/express
+* https://www.npmjs.com/package/cheerio
+* https://www.npmjs.com/package/express
 
 Then deployed using heroku to http://what-the-coffee.herokuapp.com/
 
