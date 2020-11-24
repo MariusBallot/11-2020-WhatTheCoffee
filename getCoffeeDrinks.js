@@ -31,7 +31,6 @@ async function getCoffeeDrinks() {
 
                 dlParts++
                 let dlChecker = 1
-                console.log($(el).text(), 'this part is dled')
                 $('dl').each((i, myDl) => {
                     if (dlParts == dlChecker) {
                         coffeeInfos[catIndex].drinks.push({
@@ -39,8 +38,6 @@ async function getCoffeeDrinks() {
                         })
                     }
                     if ($(myDl).nextUntil("h2").length < $(myDl).nextUntil("dl").length) {
-
-                        console.log('_______________next part')
                         dlChecker++
                     }
                 })

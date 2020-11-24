@@ -1,5 +1,5 @@
 # What The Coffee 🥄
-A simple API that returns different coffee informations
+A simple API that returns different coffee informations.
 
 ## End points
 Hosted on http://what-the-coffee.herokuapp.com
@@ -10,15 +10,15 @@ Hosted on http://what-the-coffee.herokuapp.com
 
 
 ## Details
-This api was made by dynamicly scraping those wikipedia page
+This api was made by dynamically scraping those wikipedia pages:
 * https://en.wikipedia.org/wiki/List_of_coffee_varieties
 * https://en.wikipedia.org/wiki/List_of_coffee_drinks
 
-The tools used were
+Tools:
 * https://www.npmjs.com/package/cheerio
 * https://www.npmjs.com/package/express
 
-Then deployed using heroku to http://what-the-coffee.herokuapp.com/
+Then deployed using Heroku to http://what-the-coffee.herokuapp.com/
 
 ### TODO
 *   [x] Scrape Wikipedia
@@ -28,9 +28,9 @@ Then deployed using heroku to http://what-the-coffee.herokuapp.com/
     *   [x] Get Coffee Names
     *   [x] Get Coffee Varietes
     *   [x] Get Coffee Drinks
-    *   [ ] add articles to coffee drinks
-*   [ ] APIfy
-    *   [x] express APP
-    *   [x] nodemon
+    *   [ ] Add articles to coffee drinks
+*   [x] APIfy
+    *   [x] Express APP
+    *   [x] Nodemon
     *   [x] Cors fixing
     *   [x] Deploy heroku
